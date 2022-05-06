@@ -25,7 +25,6 @@ header {
 
 nav, section {
   max-width: 1400px;
-  margin: 0 auto;
 }
 
 nav, 
@@ -37,6 +36,13 @@ ul {
 
 nav {
   justify-content: space-around;
+  margin: 0 auto;
+}
+section{
+  margin: 0 auto;
+  padding: 20px 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 nav>div{
