@@ -54,8 +54,9 @@ section{
 }
 
 h2{
-  color: #025375;
+  color: #205375;
   font-family: 'Tomorrow', sans-serif;
+  margin-bottom: 15px;
 }
 
 .container-cards {
@@ -83,3 +84,19 @@ h2{
   letter-spacing: -1px;
   margin: 30px auto 15px;
 } 
+
+.diagrama{
+  background: #205375;
+  display: flex;
+  padding: 50px 70px;
+}
+
+.diagrama div{
+  width: 50%; 
+}
+
+.diagrama p{
+  color: #eee;
+  text-align: justify;
+  /* max-width: 600px; */
+}
