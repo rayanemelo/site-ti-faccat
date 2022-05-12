@@ -4,14 +4,16 @@
 }
 
 body{
-
- color: #2d2d2d;
+ color: #0F0E0E;
  font-family: 'Montserrat', sans-serif;
  background:#eee; 
 }
 
 ul {
   list-style-type: none;
+  flex: 2;
+  display: flex;
+  justify-content: space-between; 
 }
 
 a{
@@ -21,6 +23,7 @@ a{
 header {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 5px 20px;
 }
 
 nav, section {
@@ -38,46 +41,45 @@ nav {
   justify-content: space-around;
   margin: 0 auto;
 }
-section{
-  margin: 0 auto;
-  padding: 20px 10px;
-  text-align: justify;
-  text-justify: inter-word;
-}
 
 nav>div{
   flex: 1;
 }
 
-ul {
-  flex: 2;
-  display: flex;
-  justify-content: space-between; 
+section{
+  margin: 0 auto;
+  padding: 20px 40px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 h2{
-  margin: 40px auto;
- 
+  color: #025375;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 .container-cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 30px auto
 }
 
 .card{
   background: #fff;
   display: flex;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-direction: column;;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
-  padding: 30px; 
+  padding: 30px 15px; 
   justify-content: center;
   align-items: center;
-  max-width: 350px;
+  max-width:180px;
+  height:200px;
+  text-align: center;
 }
 
-.card i{
-  margin-right:15px;
-  font-size:1.8rem
-}
+.card h3{
+  letter-spacing: -1px;
+  margin: 30px auto 15px;
+} 
