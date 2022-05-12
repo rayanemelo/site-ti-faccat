@@ -85,7 +85,7 @@ h2{
   margin: 30px auto 15px;
 } 
 
-.diagrama{
+.diagrama, .container-contato{
   background: #205375;
 }
 
@@ -107,8 +107,91 @@ h2{
 
 .linha{
   width:90%;
- border-bottom: 2px solid #7B7676; 
+  border-bottom: 2px solid #7B7676; 
   margin: 0 auto 30px;
-  opacity: 0.2;
-  justify-content: center;
+  opacity: 0.2; 
 } 
+
+.contato{
+  display: flex;
+  justify-content: space-around; 
+}
+
+.container-contato{
+  display: flex;  
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.info-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  color: #eee;
+  margin-right: 30px;
+}
+
+.info-contato h3{
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+.info-contato i{
+  font-size: 40px;
+  margin: 0 5px;
+}
+
+.card-info{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  border-radius: 10px;
+}
+
+input,textarea{
+  padding: 5px 0;
+  margin: 10px auto;
+  width: 200px;  
+  border: none;
+  border-bottom: 2px solid rgb(223, 220, 220);
+}
+
+input:focus, textarea:focus {
+  outline: none !important;
+}
+
+.card-info button {
+  width: 50%;
+  align-self: center;
+  margin-top: 5px;
+  padding:8px 5px;
+  border-radius: 5px;
+  border: none;
+  background: #205375;
+  color: #eee;
+
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button{
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #ccc;
+  color: #205375;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button{
+  font-weight: bold;
+  cursor: pointer;
+}
