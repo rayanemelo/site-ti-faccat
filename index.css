@@ -27,7 +27,7 @@ header {
 }
 
 nav, section {
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 nav, 
@@ -87,12 +87,16 @@ h2{
 
 .diagrama{
   background: #205375;
+}
+
+.diagrama,.container-section{
   display: flex;
   padding: 50px 70px;
 }
 
-.diagrama div{
+.diagrama div, .container-section div{
   width: 50%; 
+  margin: 0 10px;
 }
 
 .diagrama p{
@@ -100,3 +104,11 @@ h2{
   text-align: justify;
   /* max-width: 600px; */
 }
+
+.linha{
+  width:90%;
+ border-bottom: 2px solid #7B7676; 
+  margin: 0 auto 30px;
+  opacity: 0.2;
+  justify-content: center;
+} 
