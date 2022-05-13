@@ -64,7 +64,7 @@ header {
 
 
 nav,
-ul {
+.menu-horizontal {
   display: flex;
 }
 
@@ -74,24 +74,39 @@ nav {
   justify-content: space-between;
 }
 
-nav ul {
+.menu-horizontal {
   min-width: 600px;
   align-items: center;
   justify-content: space-between;
 }
 
-nav i{
+.menu-vertical {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  top: 75px;
+  border-radius: 0 0 3px 3px;
+}
+
+.menu-vertical li{
+  padding: 12px 24px;
+  border-top: 1px solid #eee;
+}
+
+.menu-button {
   display: none !important;
+  cursor: pointer;
   font-size: 2rem;
   margin: auto 0;
 }
 
 @media (max-width: 860px) {
-  nav ul {
+  .menu-horizontal {
     display: none
   }
 
-  nav i{
+  .menu-button{
     display: block !important;
   }
 }
