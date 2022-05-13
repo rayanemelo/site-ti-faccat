@@ -18,6 +18,7 @@ h1 {
   font-family: "Tomorrow", sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
+  margin: 40px 0;
 }
 
 h2 {
@@ -64,10 +65,26 @@ nav {
   justify-content: space-between;
 }
 
-nav > ul {
+nav ul {
   min-width: 600px;
   align-items: center;
   justify-content: space-between;
+}
+
+nav i{
+  display: none !important;
+  font-size: 2rem;
+  margin: auto 0;
+}
+
+@media (max-width: 860px) {
+  nav ul {
+    display: none
+  }
+
+  nav i{
+    display: block !important;
+  }
 }
 
 /* ===================== Capa ===================== */
@@ -88,6 +105,17 @@ nav > ul {
   justify-content: space-evenly;
 }
 
+@media (max-width: 860px) {
+  .capa div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1400px) {
+  .capa div {
+    min-width: 100%;
+  }
+}
 /* ===================== Section Sobre ===================== */
 
 .container-cards {
@@ -134,7 +162,7 @@ nav > ul {
   display: flex;
   justify-content: center;
   max-width: 100vw;
-  color: #eeeeee;
+  color: #eee;
   background-color: #205375;
 }
 
@@ -145,11 +173,24 @@ nav > ul {
   justify-content: space-evenly;
 }
 
+@media (max-width: 860px) {
+  .diagrama div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1400px) {
+  .diagrama div {
+    min-width: 100%;
+  }
+}
+
 .diagrama p {
   font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.4rem;
   max-width: 440px;
+  margin: 40px;
 }
 
 /* ===================== Section Carousel ===================== */
