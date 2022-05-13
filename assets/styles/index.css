@@ -214,6 +214,17 @@ nav i{
 
 /* ===================== Section Carousel ===================== */
 
+.carreira{
+  display: flex;
+  width: 100%;
+}
+
+.carreira div{
+  max-width: 60%;
+  margin-right: 30px;
+}
+/* ===================== Section Carousel ===================== */
+
 
 
 /* ===================== Divisória ===================== */
