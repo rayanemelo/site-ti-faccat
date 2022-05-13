@@ -11,6 +11,11 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited{
+  color: #2d2d2d;
 }
 
 h1 {
@@ -24,11 +29,12 @@ h1 {
 h2 {
   color: #205375;
   font-family: "Tomorrow", sans-serif;
-  margin-bottom: 15px;
+  margin: 20px auto 15px;
+  font-size: 1.8rem;
 }
 
 body {
-  color: #0f0e0e;
+  color: #2d2d2d;
   font-family: "Montserrat", sans-serif;
   background: #eee;
 }
@@ -52,7 +58,10 @@ header {
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   padding: 10px 40px;
   font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: 500;
 }
+
 
 nav,
 ul {
@@ -118,11 +127,16 @@ nav i{
 }
 /* ===================== Section Sobre ===================== */
 
+.about{
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+
 .container-cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 30px auto;
 }
 
 .card {
@@ -137,12 +151,17 @@ nav i{
   max-width: 180px;
   height: 250px;
   text-align: center;
-  margin: 10px 0;
+  margin: 35px 0;
 }
 
 .card h3 {
   letter-spacing: -1px;
   margin: 15px auto;
+}
+
+.card p,.p {
+  line-height: 1.3rem;
+  font-weight: 500;
 }
 
 .circle{
@@ -197,10 +216,10 @@ nav i{
 
 
 
-/* ===================== Section ===================== */
+/* ===================== Divisória ===================== */
 
 .linha {
-  width: 90%;
+  max-width: 1400px;
   border-bottom: 2px solid #7b7676;
   margin: 0 auto 30px;
   opacity: 0.2;
@@ -227,6 +246,8 @@ nav i{
   justify-content: center;
   color: #eee;
   margin-right: 30px;
+  line-height: 1.3rem;
+  font-weight: 500;
 }
 
 .info-contato h3 {
@@ -236,8 +257,9 @@ nav i{
 }
 
 .info-contato i {
-  font-size: 30px;
+  font-size: 35px;
   margin: 0 5px;
+  color: #eee;
 }
 
 .card-info {
@@ -271,14 +293,16 @@ textarea:focus {
   border: none;
   background: #205375;
   color: #eee;
+  font-weight: bold;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
+  justify-content:center
 }
 
-.buttons button {
+.buttons a {
   margin: 10px;
   padding: 10px 20px;
   border-radius: 8px;
@@ -286,6 +310,9 @@ textarea:focus {
   background: #ccc;
   color: #205375;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 button {
