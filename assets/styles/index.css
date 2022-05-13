@@ -29,7 +29,7 @@ h1 {
 h2 {
   color: #205375;
   font-family: "Tomorrow", sans-serif;
-  margin: 20px auto 15px;
+  margin: 15px 0;
   font-size: 1.8rem;
 }
 
@@ -112,6 +112,89 @@ nav {
   .menu-button{
     display: block !important;
   }
+}
+
+/* ===================== Modal ===================== */
+
+.modal {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 0 60px 20px 60px;
+}
+
+.close-modal {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+  color: #D7D6D6;
+}
+
+.fa-xmark {
+  margin-right: -40px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.modal h2 {
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+
+
+@media (max-width: 700px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+.conteudo-modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-modal {
+  width: 240px;
+  margin: 8px 0;
+}
+
+.item-modal h3 {
+  font-family: "Tomorrow", sans-serif;
+  color: #205375;
+  margin-bottom: 6px;
+}
+
+.botoes-modal {
+  align-self: flex-end;
+  margin-top: -20px;
+}
+
+.botoes-modal button {
+  width: 120px;
+  outline: none;
+  border: none;
+  padding: 8px 0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.botoes-modal button:first-child {
+  color: #205375;
+  background-color: #D7D6D6;
+}
+
+.botoes-modal button:last-child {
+  color: #D7D6D6;
+  background-color: #205375;
+  margin-left: 6px;
 }
 
 /* ===================== Capa ===================== */
