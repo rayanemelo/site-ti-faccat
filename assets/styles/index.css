@@ -62,7 +62,6 @@ header {
   font-weight: 500;
 }
 
-
 nav,
 .menu-horizontal {
   display: flex;
@@ -336,4 +335,32 @@ button {
   cursor: pointer;
 }
 
-/* ===================== footer ===================== */
+/* ===================== Footer ===================== */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-image: url("../images/background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #205375;
+  color: #eee;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.conteudo-footer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1400px;
+}
+.conteudo-footer div {
+  display: flex;
+  flex-direction: column;
+}
