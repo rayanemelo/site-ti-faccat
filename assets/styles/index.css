@@ -178,7 +178,7 @@ nav > ul {
 /* ===================== Divisória ===================== */
 
 .linha {
-  width: 90%;
+  max-width: 1400px;
   border-bottom: 2px solid #7b7676;
   margin: 0 auto 30px;
   opacity: 0.2;
@@ -218,6 +218,7 @@ nav > ul {
 .info-contato i {
   font-size: 35px;
   margin: 0 5px;
+  color: #eee;
 }
 
 .card-info {
@@ -260,7 +261,7 @@ textarea:focus {
   justify-content:center
 }
 
-.buttons button {
+.buttons a {
   margin: 10px;
   padding: 10px 20px;
   border-radius: 8px;
@@ -268,6 +269,9 @@ textarea:focus {
   background: #ccc;
   color: #205375;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 button {
