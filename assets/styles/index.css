@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-  color: #eeeeee;
+  color: #eee;
   font-family: "Tomorrow", sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
@@ -81,7 +81,7 @@ nav > ul {
   background-color: #205375;
 }
 
-.capa > div {
+.capa div {
   min-width: 1400px;
   display: flex;
   align-items: center;
@@ -128,8 +128,29 @@ nav > ul {
   display: flex;
   justify-content: center;
   max-width: 100vw;
+  color: #eeeeee;
   background-color: #205375;
 }
+
+.diagrama div {
+  min-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.diagrama p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  max-width: 440px;
+}
+
+/* ===================== Section Carousel ===================== */
+
+
+
+/* ===================== Section ===================== */
 
 .linha {
   width: 90%;
