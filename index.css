@@ -1,56 +1,23 @@
+/* ===================== Global Styles ===================== */
+
 * {
  margin:0;
  padding:0; 
 }
 
-body{
- color: #0F0E0E;
- font-family: 'Montserrat', sans-serif;
- background:#eee; 
-}
-
 ul {
   list-style-type: none;
-  flex: 2;
-  display: flex;
-  justify-content: space-between; 
 }
 
 a{
   text-decoration: none;
 }
 
-header {
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  padding: 5px 20px;
-}
-
-nav, section {
-  /* max-width: 1400px; */
-}
-
-nav, 
-nav>div,
-ul {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  justify-content: space-around;
-  margin: 0 auto;
-}
-
-nav>div{
-  flex: 1;
-}
-
-section{
-  margin: 0 auto;
-  padding: 20px 40px;
-  text-align: justify;
-  text-justify: inter-word;
+h1 {
+  color: #EEEEEE;
+  font-family: 'Tomorrow', sans-serif;
+  /* position: absolute; */
+  /* right: -80; */
 }
 
 h2{
@@ -59,9 +26,70 @@ h2{
   margin-bottom: 15px;
 }
 
+body{
+ color: #0F0E0E;
+ font-family: 'Montserrat', sans-serif;
+ background:#eee; 
+}
+
+section{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ===================== Header ===================== */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}
+
+nav, ul {
+  display: flex;
+}
+
+nav{
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+nav>ul {
+  min-width: 600px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===================== Capa ===================== */
+
+.capa {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 75px;
+  max-width: 100vw;
+  height: 410px;
+  background-color: #205375;
+  background-image: url("./assets/capa.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* ===================== Capa ===================== */
+
 .container-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 30px auto
 }
