@@ -137,6 +137,8 @@ nav > ul {
   background-color: #205375;
 }
 
+/* ===================== Divisória===================== */
+
 .linha {
   width: 90%;
   border-bottom: 2px solid #7b7676;
@@ -144,6 +146,7 @@ nav > ul {
   opacity: 0.2;
 }
 
+/* ===================== Section Contato ===================== */
 .contato {
   display: flex;
   justify-content: space-around;
@@ -154,6 +157,7 @@ nav > ul {
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #205375;
 }
 
 .info-contato {
@@ -172,7 +176,7 @@ nav > ul {
 }
 
 .info-contato i {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0 5px;
 }
 
@@ -228,3 +232,5 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+/* ===================== footer ===================== */
