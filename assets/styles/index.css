@@ -7,10 +7,12 @@
 
 ul {
   list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 
@@ -18,24 +20,9 @@ a:visited{
   color: #2d2d2d;
 }
 
-h1 {
-  color: #eee;
-  font-family: "Tomorrow", sans-serif;
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin: 40px 0;
-}
-
-h2 {
-  color: #205375;
-  font-family: "Tomorrow", sans-serif;
-  margin: 15px 0;
-  font-size: 1.8rem;
-}
-
 body {
   color: #2d2d2d;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   background: #eee;
   overflow-x: hidden;
 }
@@ -48,9 +35,12 @@ section {
   text-justify: inter-word;
 }
 
-.stop-scrolling {
-  /* height: 100%; */
-  overflow: hidden;
+.titulo-section {
+  color: #205375;
+  font-family: "Tomorrow", sans-serif;
+  margin: 15px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 /* ===================== Header ===================== */
@@ -122,62 +112,6 @@ nav {
 
 /* ===================== Modal ===================== */
 
-/* .modal-dialog {
-  opacity: 0.8;
-} */
-
-/* .modal { */
-  /* width: 550px; */
-  /* max-height: 700px; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 0 60px 30px 60px;
-  z-index: 10;
-  font-size: 0.9rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-} */
-
-.close-modal {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1.4rem;
-  color: #D7D6D6;
-  
-}
-
-.fa-xmark {
-  margin-right: -40px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-.modal h2 {
-  text-transform: uppercase;
-  margin: 0 0 12px 0;
-  font-size: 1.4rem;
-}
-
-
-@media (max-width: 768px) {
-  .modal {
-    width: 100%;
-  }
-}
-
-.conteudo-modal {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .item-modal {
   width: 240px;
   margin: 8px 0;
@@ -187,11 +121,6 @@ nav {
   font-family: "Tomorrow", sans-serif;
   color: #205375;
   margin-bottom: 6px;
-}
-
-.botoes-modal {
-  align-self: flex-end;
-  margin-top: -45px;
 }
 
 .botoes-modal button {
@@ -238,6 +167,15 @@ nav {
   }
 }
 
+.titulo-capa {
+  color: #eee;
+  font-family: "Tomorrow", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
 /* ===================== Section Sobre ===================== */
 
 .about,.p{
@@ -267,10 +205,12 @@ nav {
   margin: 35px 0;
 }
 
-.card h3 {
+.titulo-card {
+  font-size: 1.3rem;
   letter-spacing: -1px;
   margin: 15px auto;
 }
+
 
 .card p {
   line-height: 1.3rem;
@@ -455,13 +395,19 @@ footer {
 }
 
 footer h4 {
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 
+footer a {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
 footer p {
   max-width: 280px;
-  margin-top: 8px;
+  margin: 8px 0 0 0;
   font-size: 0.8rem;
 }
 
