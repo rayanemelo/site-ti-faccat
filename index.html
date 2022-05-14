@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <title>Cursos de TI</title>
 </head>
 
@@ -26,7 +27,7 @@
       <ul class="menu-horizontal">
         <li>sobre o curso</li>
         <a target="_blank">
-          <li>matriz curricular</li>
+          <li class="modal-matriz">matriz curricular</li>
         </a>
         <a href="https://fit.faccat.br/ead/" target="_blank">
           <li>ambiente fit</li>
@@ -140,6 +141,32 @@
 
     <section>
       <h2>LABORATÓRIOS</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/carousel-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/carousel-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/carousel-1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <section>
@@ -267,89 +294,98 @@
     </div>
   </footer>
 
-  <div class="modal">
-    <div class="close-modal">
-      <i class="fa-solid fa-xmark"></i>
-    </div>
-    <h2>Matriz Curricular</h2>
-    <div class="conteudo-modal">
-      <div class="item-modal">
-        <h3>Primeiro semestre</h3>
-        <p>Matemática Fundamental</p>
-        <p>Português</p>
-        <p>Introdução à Computação</p>
-        <p>Metodologia Científica</p>
-        <p>Lógica e Matemática Discreta</p>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Matriz Curricular</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="item-modal">
+            <h3>Primeiro semestre</h3>
+            <p>Matemática Fundamental</p>
+            <p>Português</p>
+            <p>Introdução à Computação</p>
+            <p>Metodologia Científica</p>
+            <p>Lógica e Matemática Discreta</p>
+          </div>
+          <div class="item-modal">
+            <h3>Segundo semestre</h3>
+            <p>Matemática Financeira</p>
+            <p>Probabilidade e Estatística</p>
+            <p>Programação I</p>
+            <p>Arquitetura de Computadores</p>
+            <p>Filosofia</p>
+          </div>
+          <div class="item-modal">
+            <h3>Terceiro semestre</h3>
+            <p>Sociologia</p>
+            <p>Teoria Geral da Administração</p>
+            <p>Programação II</p>
+            <p>Estrutura de Dados</p>
+            <p>Organização de Dados</p>
+            <p>Teleprocessamento</p>
+          </div>
+          <div class="item-modal">
+            <h3>Quarto semestre</h3>
+            <p>Administração Financeira</p>
+            <p>Programação III</p>
+            <p>Sistemas Operacionais</p>
+            <p>Análise de Sistemas I</p>
+            <p>Redes de Computadores</p>
+            <p>Linguagens de Programação</p>
+          </div>
+          <div class="item-modal">
+            <h3>Quinto semestre</h3>
+            <p>Compiladores</p>
+            <p>Análise de Sistemas II</p>
+            <p>Banco de Dados I</p>
+            <p>Complexidade de Algoritmos</p>
+            <p>Geometria Analítica e Álgebra Linear</p>
+            <p>Tópicos Especiais em SI</p>
+          </div>
+          <div class="item-modal">
+            <h3>Sexto semestre</h3>
+            <p>Engenharia de Software</p>
+            <p>Sistemas de Informação</p>
+            <p>Sistemas Distribuídos</p>
+            <p>Banco de Dados II</p>
+            <p>Inteligência Artificial</p>
+            <p>Estágio Profissional</p>
+          </div>
+          <div class="item-modal">
+            <h3>Sétimo semestre</h3>
+            <p>Computação Gráfica</p>
+            <p>Segurança e Auditoria de Sistemas</p>
+            <p>Aplicações Industriais e Comerciais</p>
+            <p>Legislação e Informática</p>
+            <p>Gerência de Projetos</p>
+            <p>Trabalho de Conclusão I</p>
+          </div>
+          <div class="item-modal">
+            <h3>Oitavo semestre</h3>
+            <p>Avaliação de Desempenho de Sistemas</p>
+            <p>Empreendedorismo</p>
+            <p>Computador e Sociedade</p>
+            <p>Trabalho de Conclusão II</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="https://www2.faccat.br/portal/sites/default/files/matrizCurricular_40_Sistemas%20de%20Informa%C3%A7%C3%A3o.pdf" target="_blank">
+            <button type="button" class="btn btn-primary">Ver mais</button>
+          </a>
+        </div>
       </div>
-      <div class="item-modal">
-        <h3>Segundo semestre</h3>
-        <p>Matemática Financeira</p>
-        <p>Probabilidade e Estatística</p>
-        <p>Programação I</p>
-        <p>Arquitetura de Computadores</p>
-        <p>Filosofia</p>
-      </div>
-      <div class="item-modal">
-        <h3>Terceiro semestre</h3>
-        <p>Sociologia</p>
-        <p>Teoria Geral da Administração</p>
-        <p>Programação II</p>
-        <p>Estrutura de Dados</p>
-        <p>Organização de Dados</p>
-        <p>Teleprocessamento</p>
-      </div>
-      <div class="item-modal">
-        <h3>Quarto semestre</h3>
-        <p>Administração Financeira</p>
-        <p>Programação III</p>
-        <p>Sistemas Operacionais</p>
-        <p>Análise de Sistemas I</p>
-        <p>Redes de Computadores</p>
-        <p>Linguagens de Programação</p>
-      </div>
-      <div class="item-modal">
-        <h3>Quinto semestre</h3>
-        <p>Compiladores</p>
-        <p>Análise de Sistemas II</p>
-        <p>Banco de Dados I</p>
-        <p>Complexidade de Algoritmos</p>
-        <p>Geometria Analítica e Álgebra Linear</p>
-        <p>Tópicos Especiais em SI</p>
-      </div>
-      <div class="item-modal">
-        <h3>Sexto semestre</h3>
-        <p>Engenharia de Software</p>
-        <p>Sistemas de Informação</p>
-        <p>Sistemas Distribuídos</p>
-        <p>Banco de Dados II</p>
-        <p>Inteligência Artificial</p>
-        <p>Estágio Profissional</p>
-      </div>
-      <div class="item-modal">
-        <h3>Sétimo semestre</h3>
-        <p>Computação Gráfica</p>
-        <p>Segurança e Auditoria de Sistemas</p>
-        <p>Aplicações Industriais e Comerciais</p>
-        <p>Legislação e Informática</p>
-        <p>Gerência de Projetos</p>
-        <p>Trabalho de Conclusão I</p>
-      </div>
-      <div class="item-modal">
-        <h3>Oitavo semestre</h3>
-        <p>Avaliação de Desempenho de Sistemas</p>
-        <p>Empreendedorismo</p>
-        <p>Computador e Sociedade</p>
-        <p>Trabalho de Conclusão II</p>
-      </div>
-    </div>
-    <div class="botoes-modal">
-      <button>Fechar</button>
-      <a href="https://www2.faccat.br/portal/sites/default/files/matrizCurricular_40_Sistemas%20de%20Informa%C3%A7%C3%A3o.pdf" target="_blank">
-      <button>Ver mais</button>
-    </a>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 <script src="./assets/javascript/index.js"></script>
 
