@@ -435,6 +435,7 @@ footer {
   background-repeat: no-repeat;
   background-color: #205375;
   color: #eee;
+  padding-left: 15px;
 }
 
 footer h4 {
@@ -446,6 +447,7 @@ footer h4 {
 footer a {
   font-size: 1rem;
   line-height: 1.2rem;
+  
 }
 
 footer p {
@@ -497,6 +499,21 @@ footer p {
   .vida-academica div{
     width:100%
   }
+}
+
+
+@media (max-width: 940px) {
+  
+  .conteudo-footer{
+    flex-wrap: wrap;
+    height:100%;
+    /* padding: 20px 5px; */
+  }
+
+  .conteudo-footer div:last-child{
+    /* padding: 20px 5px; */
+  }
+
 }
 
 @media (max-width: 980px) {
