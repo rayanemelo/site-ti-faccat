@@ -259,7 +259,7 @@ nav {
   margin: 40px;
 }
 
-/* ===================== Section Carousel ===================== */
+/* ===================== Section Carreira Profissional ===================== */
 
 .carreira{
   display: flex;
@@ -270,7 +270,22 @@ nav {
   max-width: 60%;
   margin-right: 30px;
 }
+
+@media (max-width: 860px) {
+  .carreira{
+    flex-direction: column;
+  }
+
+  .carreira div{
+    margin-right: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center
+  }
+}
+
 /* ===================== Section Vida academica ===================== */
+
 .vida-academica{
   background-image: url('/assets/images/logo_ti_transparent.png');
   background-repeat: no-repeat;
