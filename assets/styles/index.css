@@ -204,6 +204,10 @@ nav {
   justify-content: space-evenly;
 }
 
+.capa img {
+  width: 400px;
+}
+
 .titulo-capa {
   color: #eee;
   font-family: "Tomorrow", sans-serif;
@@ -502,6 +506,15 @@ footer p {
 
 /* ===================== Responsividade ===================== */
 
+@media (max-width: 420px) {
+  .capa img {
+    width: 100%;
+  }
+
+  .carreira img{
+    width: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   .modal-body {
@@ -636,10 +649,11 @@ footer p {
 
   .carreira p{
     max-width: 100%;
+   margin-right: 0;
   }
 
   .carreira img{
-   margin-top: 30px;
+    margin-top: 30px;
   }
 }
 
