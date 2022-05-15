@@ -302,10 +302,11 @@ nav {
 
 .carreira p{
  max-width: 600px;
+ margin-right: 40px;
 }
 
 .carreira img{
-  width: 300px;
+  width: 360px;
   margin: 0 auto;
  }
 
