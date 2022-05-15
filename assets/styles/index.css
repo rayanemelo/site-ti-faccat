@@ -44,6 +44,7 @@ section {
 }
 
 /* ===================== Header ===================== */
+
 header {
   position: fixed;
   top: 0;
@@ -98,16 +99,6 @@ nav {
   cursor: pointer;
   font-size: 2rem;
   margin: auto 0;
-}
-
-@media (max-width: 860px) {
-  .menu-horizontal {
-    display: none
-  }
-
-  .menu-button{
-    display: block !important;
-  }
 }
 
 /* ===================== Modal ===================== */
@@ -204,12 +195,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-
-@media (max-width: 860px) {
-  .capa div {
-    flex-direction: column;
-  }
 }
 
 .titulo-capa {
@@ -342,6 +327,7 @@ margin-right: 8vh;
 }
 
 /* ===================== Section Contato ===================== */
+
 .contato {
   display: flex;
   justify-content: space-around;
@@ -481,22 +467,48 @@ footer p {
 /* ===================== Responsividade ===================== */
 
 @media (max-width: 860px) {
+
+  .menu-horizontal {
+    display: none
+  }
+
+  .menu-button{
+    display: block !important;
+  }
+
+  .capa div {
+    flex-direction: column;
+  }
   
   .carreira, 
-  .diagrama div,
   .vida-academica{
     flex-direction: column;
     align-items: center;
   }
   .carreira p, 
-  .diagrama p,
   .vida-academica div:first-child{
     margin: 0;
+    }
+
+    .carreira img{
+      margin-top:15px
     }
 
   .vida-academica div{
     width:100%
   }
+}
+
+@media (max-width: 980px) {
+  
+  .diagrama div{
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .diagrama p{
+    margin: 0;
+    }
 
   .diagrama{
     padding: 20px auto
@@ -505,7 +517,7 @@ footer p {
   .diagrama p {
     max-width: 100%;
   }
-  
+
   .diagrama img, 
   .diagrama p{
     margin-bottom: 20px;
