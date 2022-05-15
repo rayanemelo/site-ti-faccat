@@ -1,4 +1,5 @@
 $(".menu-button").click(openMenu);
+$(".menu-item").click(openMenu);
 
 function openMenu() {
   const menu = $(".menu-vertical");
