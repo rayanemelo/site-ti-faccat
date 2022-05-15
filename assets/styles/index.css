@@ -229,11 +229,10 @@ nav {
 
 .card {
   background: #fff;
-  display: flex;
-  flex-direction: column;
+
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
-  padding: 10px 15px 15px;
+  /* padding: 10px 15px 15px; */
   justify-content: center;
   align-items: center;
   max-width: 180px;
@@ -436,6 +435,7 @@ textarea:focus {
   font-weight: 500;
   font-size: 1.1rem;
   line-height: 1.4rem;
+  text-align: center;
 }
 
 .buttons a:hover{
