@@ -25,10 +25,6 @@ header a:hover{
   color: #2d2d2d;
 }
 
-header a:hover{
-  
-}
-
 body {
   color: #2d2d2d;
   font-family: "Montserrat", sans-serif !important;
@@ -336,7 +332,7 @@ nav {
 /* ===================== Divisória ===================== */
 
 .linha {
-  max-width: 1400px;
+  max-width: 1322px!important;
   width: 90%;
   border-bottom: 2px solid #7b7676;
   margin: 0 auto 30px;
@@ -475,10 +471,16 @@ footer h4 {
 
 footer a {
   font-size: 1rem;
-  line-height: 1.2rem; 
+  line-height: 1.4rem; 
+  color: #eee!important;
+}
+
+footer a:hover {
+  color: #eee;
 }
 
 footer p {
+  
   max-width: 280px;
   margin: 8px 0 0 0;
   font-size: 0.8rem;
