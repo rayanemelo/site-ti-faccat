@@ -112,13 +112,35 @@ nav {
 
 /* ===================== Modal ===================== */
 
+.modal-header h2 {
+  font-family: "Tomorrow", sans-serif;
+  color: #205375;
+  margin: 0;
+}
+
+.modal {
+  --bs-modal-padding: 30px 60px !important;
+  --bs-modal-width: 760px !important;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-body p {
+  margin: 0;
+}
+
 .item-modal {
-  width: 240px;
+  width: 300px;
+  height: 190px;
   margin: 8px 0;
 }
 
 .item-modal h3 {
   font-family: "Tomorrow", sans-serif;
+  font-size: 1.6rem;
   color: #205375;
   margin-bottom: 6px;
 }
