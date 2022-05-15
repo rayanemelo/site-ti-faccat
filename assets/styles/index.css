@@ -267,6 +267,10 @@ nav {
   justify-content: space-evenly;
 }
 
+.diagrama img{
+  max-width:500px;
+} 
+
 .diagrama p {
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -279,12 +283,10 @@ nav {
 
 .carreira{
   display: flex;
-  width: 100%;
+  justify-content:space-between;
 }
-
-.carreira div{
-  max-width: 60%;
-  margin-right: 30px;
+.carreira p{
+margin-right: 8vh;
 }
 
 /* ===================== Section Vida academica ===================== */
@@ -454,20 +456,35 @@ footer p {
 }
 
 /* ===================== Responsividade ===================== */
-@media (max-width: 860px) {
-  .carreira, .diagrama div,.vida-academica{
-    flex-direction: column;
-  }
 
-  .carreira div{
-    margin-right: 0;
-    max-width: 100%;
-    display: flex;
-    justify-content: center
+@media (max-width: 860px) {
+  
+  .carreira, 
+  .diagrama div,
+  .vida-academica{
+    flex-direction: column;
+    align-items: center;
   }
+  .carreira p, 
+  .diagrama p,
+  .vida-academica div:first-child{
+    margin: 0;
+    }
 
   .vida-academica div{
     width:100%
-    
+  }
+
+  .diagrama{
+    padding: 20px auto
+  }
+
+  .diagrama p {
+    max-width: 100%;
+  }
+  
+  .diagrama img, 
+  .diagrama p{
+    margin-bottom: 20px;
   }
 }
