@@ -185,7 +185,7 @@ nav {
 }
 
 .modal-footer button:last-child {
-  color: #D7D6D6;
+  color: #fff;
   background-color: #205375;
   margin-left: 6px;
 }
@@ -303,9 +303,16 @@ nav {
   display: flex;
   justify-content:space-between;
 }
+
 .carreira p{
-margin-right: 8vh;
+ max-width: 600px;
+ margin-right: 40px;
 }
+
+.carreira img{
+  width: 360px;
+  margin: 0 auto;
+ }
 
 /* ===================== Section Vida academica ===================== */
 
@@ -457,7 +464,7 @@ footer {
   background-repeat: no-repeat;
   background-color: #205375;
   color: #eee;
-  padding-left: 15px;
+  padding: 20px;
 }
 
 footer h4 {
@@ -480,11 +487,12 @@ footer p {
 .conteudo-footer {
   display: flex;
   justify-content: space-between;
-  width: 1024px;
+  width: 1200px;
 }
 .conteudo-footer div {
   display: flex;
   flex-direction: column;
+  margin: 0 8px;
 }
 
 /* ===================== Responsividade ===================== */
@@ -548,7 +556,7 @@ footer p {
   }
 
   .card-info{
-    margin-top: 10px;
+    margin-top: 20px;
     height: 100%;
   }
 
@@ -575,19 +583,14 @@ footer p {
     flex-direction: column;
   }
   
-  .carreira, 
   .vida-academica{
     flex-direction: column;
     align-items: center;
   }
-  .carreira p, 
+
   .vida-academica div:first-child{
     margin: 0;
-    }
-
-    .carreira img{
-      margin-top:15px
-    }
+  }
 
   .vida-academica div{
     width:100%
@@ -596,21 +599,6 @@ footer p {
   .buttons a{
     text-align: center;
   }
-}
-
-
-@media (max-width: 940px) {
-  
-  .conteudo-footer{
-    flex-wrap: wrap;
-    height:100%;
-    /* padding: 20px 5px; */
-  }
-
-  .conteudo-footer div:last-child{
-    /* padding: 20px 5px; */
-  }
-
 }
 
 @media (max-width: 980px) {
@@ -636,10 +624,35 @@ footer p {
   .diagrama p{
     margin-bottom: 20px;
   }
+
+  .carreira{
+    flex-direction: column;
+  }
+
+  .carreira p{
+    max-width: 100%;
+  }
+
+  .carreira img{
+   margin-top: 30px;
+  }
 }
 
-@media (max-width: 1028px) {
-  .buttons a{
-    text-align: center;
+@media (max-width: 940px) {
+  footer {
+    height:100%;
+  }
+
+  footer h4 {
+    margin-top: 16px;
+  }
+  
+  .conteudo-footer{
+    flex-wrap: wrap;
+  }
+
+  .conteudo-footer div {
+    width: 260px;
+    margin: 8px auto;
   }
 }
